@@ -6,7 +6,7 @@ import { filterData } from "../utils/helper";
 import useOnline from "../utils/useOnline";
 import Footer from "./Footer";
 
-const Body = ({ userDetails }) => {
+const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -35,9 +35,8 @@ const Body = ({ userDetails }) => {
   // Early Return.
   // Situation comes where there is no allRestaurants.
   // Handles the allRestaurants.length is not defined
-  // Best way to handle this error. This can also be handled by using optional chaining.
-  // allRestaurants?.length===0
-  if (!allRestaurants) return <h1>Component not rendered. LOL</h1>;
+  if (!allRestaurants)
+    return <h1>Component not rendered. Try Refreshing the page.</h1>;
 
   return allRestaurants.length === 0 ? (
     <Shimmer />
@@ -74,10 +73,7 @@ const Body = ({ userDetails }) => {
                 to={"/restaurant/" + fetchedData.info.id}
                 key={fetchedData.info.id}
               >
-                <RestaurantCard
-                  {...fetchedData.info}
-                  userDetails={userDetails}
-                />
+                <RestaurantCard {...fetchedData.info} />
               </Link>
             );
           })

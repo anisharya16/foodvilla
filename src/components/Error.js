@@ -9,8 +9,6 @@ const Error = () => {
   return (
     <div>
       <p>Oops! Something went wrong.</p>
-      <p>{err.status}</p>
-      <p>{err.data}</p>
       <p>{status}</p>
       <p>{statusText}</p>
     </div>

@@ -27,7 +27,7 @@ const Instamart = () => {
     <div>
       <p className="text-2xl font-bold p-2 m-2">Instamart</p>
       <Section
-        title={"About Section"}
+        title={"About"}
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis felis ut est ultricies, a auctor erat mattis. Suspendisse non vulputate massa, eget auctor enim. Sed venenatis a ex id euismod. Nullam at sem libero. Donec malesuada, orci a pulvinar rhoncus, sem justo molestie erat, quis varius lorem leo sed justo. Curabitur lacus dui, ultrices ut fermentum eu, dictum sed massa. Fusce elementum urna a efficitur consequat."
         }
@@ -37,7 +37,7 @@ const Instamart = () => {
         }
       />
       <Section
-        title={"Team Section"}
+        title={"Team"}
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis felis ut est ultricies, a auctor erat mattis. Suspendisse non vulputate massa, eget auctor enim. Sed venenatis a ex id euismod. Nullam at sem libero. Donec malesuada, orci a pulvinar rhoncus, sem justo molestie erat, quis varius lorem leo sed justo. Curabitur lacus dui, ultrices ut fermentum eu, dictum sed massa. Fusce elementum urna a efficitur consequat."
         }
@@ -47,7 +47,7 @@ const Instamart = () => {
         }
       />
       <Section
-        title={"Careers Section"}
+        title={"Careers"}
         description={
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis felis ut est ultricies, a auctor erat mattis. Suspendisse non vulputate massa, eget auctor enim. Sed venenatis a ex id euismod. Nullam at sem libero. Donec malesuada, orci a pulvinar rhoncus, sem justo molestie erat, quis varius lorem leo sed justo. Curabitur lacus dui, ultrices ut fermentum eu, dictum sed massa. Fusce elementum urna a efficitur consequat."
         }

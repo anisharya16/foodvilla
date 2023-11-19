@@ -26,9 +26,6 @@ const Cart = () => {
       </div>
       <div className="flex mt-2">
         {cartItems.map((item) => {
-          {
-            console.log(item);
-          }
           return <FoodItem key={item.id} {...item} />;
         })}
       </div>

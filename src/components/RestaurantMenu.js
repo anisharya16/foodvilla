@@ -7,7 +7,6 @@ import { addItem } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
 
 const RestaurantMenu = () => {
-  //   const myParam = useParams();
   const { resID } = useParams();
   const { restaurant, menuList } = useRestaurant(resID);
   const dispatch = useDispatch();
@@ -20,7 +19,6 @@ const RestaurantMenu = () => {
     <Shimmer />
   ) : (
     <div className="flex m-5">
-      {/* <p>Restaurant Id: {myParam.resID}</p> */}
       <div>
         <p className="italic mb-2">Restaurant Id: {resID}</p>
         <p className="font-bold text-gray-500 text-xl my-6">
